@@ -1,0 +1,815 @@
+<EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="urn:oasis:psi.ch:Umbrella"
+	validUntil="2015-10-04T07:59:01Z"
+	xsi:schemaLocation="urn:oasis:names:tc:SAML:2.0:metadata saml-schema-metadata-2.0.xsd urn:mace:shibboleth:metadata:1.0 shibboleth-metadata-1.0.xsd http://www.w3.org/2000/09/xmldsig# xmldsig-core-schema.xsd">
+
+	<!-- Umbrella IdP -->
+
+	<EntityDescriptor entityID="https://umbrellaid.org/idp/shibboleth"
+		xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+		xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+		<IDPSSODescriptor
+			protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+			<KeyDescriptor>
+				<ds:KeyInfo>
+					<ds:X509Data>
+						<ds:X509Certificate>
+							MIIDNDCCAhygAwIBAgIVAIHBxO95keQzri03lUrDy6xwbofgMA0GCSqGSIb3DQEB
+							BQUAMB0xGzAZBgNVBAMTEnVtYnJlbGxhaWRwLnBzaS5jaDAeFw0xMzAyMjExNDUy
+							MzdaFw0zMzAyMjExNDUyMzdaMB0xGzAZBgNVBAMTEnVtYnJlbGxhaWRwLnBzaS5j
+							aDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALjdy3TLifMh/K+9TIxr
+							3t5ARt99q6yhCUxClX+VHoYjL/oD7bt9Cug9qt6DAJj6tjKwdpbSyqZUL7zm6LDp
+							bWUkjXxrRSq5VAJSqFhL4I3MZqV2F+taY0g1XLXMAMTSEPq6rGQ4mN1A3ialkR4E
+							0RQ0gnCWiydbPw0dIYrXayq8Jn6DV5MR2CjwbLuDQvZuIyF8FEGpHnxET+j4hNzg
+							hgKJoNcuEuZXQrGJq/wzsaBHwg9bLNlZYZ9Xdni81UO3rIFpG4vBOPz2h2+LRwis
+							GP2EgiHytI7OwR0+q418un+dehge4l9+NyI5XceYM4iWE/iLVtzAlGWBsG5q1yF4
+							LosCAwEAAaNrMGkwSAYDVR0RBEEwP4ISdW1icmVsbGFpZHAucHNpLmNohilodHRw
+							czovL3VtYnJlbGxhaWRwLnBzaS5jaC9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQU
+							We3NcJNB2VjF2pDIIF0RXby78DswDQYJKoZIhvcNAQEFBQADggEBABFZvBWirYPW
+							TTJOGwtZBLrJGadSOM8YFlt6QL0hAArbEl3wgdnakG8e21no3TCxfZRN2P3PAZJA
+							iQFApYQT7E7kOx5yNwSKbNFRmL3dxhSoRBbdoNnAYugi09FpC1AsuFyBMlpYv6RZ
+							Ho+MgRznsrTOSosZkP0+pY0I7/GPvQq4zCO2KYnrhUvscSRDwzo+D+Ib0+yvpcKb
+							fAxWfPeq3SLnwZohxJOOxZHpHWyVY6OPogTMhz1FjUnbFV6H2HB2h4HHMCcFn530
+							XIaSBz4HVNIeWhIOFulnZJL3KNCrYw5ZA1HNXOYH3jitW1z5mjNmfEv6Zr+ca7XP
+							vm/G4x7IQ8Y=
+
+                    </ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
+				Location="https://umbrellaid.org/idp/profile/SAML1/SOAP/ArtifactResolution"
+				index="1" />
+
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://umbrellaid.org/idp/profile/SAML2/SOAP/ArtifactResolution"
+				index="2" />
+
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://umbrellaid.org/idp/profile/SAML2/Redirect/SLO"
+				ResponseLocation="https://umbrellaid.org/idp/profile/SAML2/Redirect/SLO" />
+
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://umbrellaid.org/idp/profile/SAML2/POST/SLO"
+				ResponseLocation="https://umbrellaid.org/idp/profile/SAML2/POST/SLO" />
+
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://umbrellaid.org/idp/profile/SAML2/SOAP/SLO" />
+
+			<NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
+			</NameIDFormat>
+
+			<SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest"
+				Location="https://umbrellaid.org/idp/profile/Shibboleth/SSO" />
+
+			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://umbrellaid.org/idp/profile/SAML2/POST/SSO" />
+
+			<SingleSignOnService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://umbrellaid.org/idp/profile/SAML2/POST-SimpleSign/SSO" />
+
+			<SingleSignOnService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://umbrellaid.org/idp/profile/SAML2/Redirect/SSO" />
+		</IDPSSODescriptor>
+
+		<AttributeAuthorityDescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+			<Extensions>
+				<shibmd:Scope regexp="false">psi.ch</shibmd:Scope>
+			</Extensions>
+
+			<KeyDescriptor>
+				<ds:KeyInfo>
+					<ds:X509Data>
+						<ds:X509Certificate>
+							MIIDNDCCAhygAwIBAgIVAIHBxO95keQzri03lUrDy6xwbofgMA0GCSqGSIb3DQEB
+							BQUAMB0xGzAZBgNVBAMTEnVtYnJlbGxhaWRwLnBzaS5jaDAeFw0xMzAyMjExNDUy
+							MzdaFw0zMzAyMjExNDUyMzdaMB0xGzAZBgNVBAMTEnVtYnJlbGxhaWRwLnBzaS5j
+							aDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALjdy3TLifMh/K+9TIxr
+							3t5ARt99q6yhCUxClX+VHoYjL/oD7bt9Cug9qt6DAJj6tjKwdpbSyqZUL7zm6LDp
+							bWUkjXxrRSq5VAJSqFhL4I3MZqV2F+taY0g1XLXMAMTSEPq6rGQ4mN1A3ialkR4E
+							0RQ0gnCWiydbPw0dIYrXayq8Jn6DV5MR2CjwbLuDQvZuIyF8FEGpHnxET+j4hNzg
+							hgKJoNcuEuZXQrGJq/wzsaBHwg9bLNlZYZ9Xdni81UO3rIFpG4vBOPz2h2+LRwis
+							GP2EgiHytI7OwR0+q418un+dehge4l9+NyI5XceYM4iWE/iLVtzAlGWBsG5q1yF4
+							LosCAwEAAaNrMGkwSAYDVR0RBEEwP4ISdW1icmVsbGFpZHAucHNpLmNohilodHRw
+							czovL3VtYnJlbGxhaWRwLnBzaS5jaC9pZHAvc2hpYmJvbGV0aDAdBgNVHQ4EFgQU
+							We3NcJNB2VjF2pDIIF0RXby78DswDQYJKoZIhvcNAQEFBQADggEBABFZvBWirYPW
+							TTJOGwtZBLrJGadSOM8YFlt6QL0hAArbEl3wgdnakG8e21no3TCxfZRN2P3PAZJA
+							iQFApYQT7E7kOx5yNwSKbNFRmL3dxhSoRBbdoNnAYugi09FpC1AsuFyBMlpYv6RZ
+							Ho+MgRznsrTOSosZkP0+pY0I7/GPvQq4zCO2KYnrhUvscSRDwzo+D+Ib0+yvpcKb
+							fAxWfPeq3SLnwZohxJOOxZHpHWyVY6OPogTMhz1FjUnbFV6H2HB2h4HHMCcFn530
+							XIaSBz4HVNIeWhIOFulnZJL3KNCrYw5ZA1HNXOYH3jitW1z5mjNmfEv6Zr+ca7XP
+							vm/G4x7IQ8Y=
+
+                    </ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+
+			<AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding"
+				Location="https://umbrellaid.org/idp/profile/SAML1/SOAP/AttributeQuery" />
+
+			<AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://umbrellaid.org/idp/profile/SAML2/SOAP/AttributeQuery" />
+
+			<NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+			</NameIDFormat>
+
+		</AttributeAuthorityDescriptor>
+		<Organization>
+			<OrganizationName xml:lang="en">Umbrella ID
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">Umbrella ID
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">Umbrella ID
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">Umbrella ID
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">https://umbrellaid.org/
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Umbrella</GivenName>
+			<SurName>Support</SurName>
+			<EmailAddress>mailto:bjoern.abt@psi.ch</EmailAddress>
+			<TelephoneNumber>+41563103509</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_161330fcdd0ae7447bc352f6ab1129a0bb33ba6a" entityID="https://umbrellaid.org/shibboleth">
+
+		<SPSSODescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>umbrellaidp.psi.ch</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=umbrellaidp.psi.ch</ds:X509SubjectName>
+						<ds:X509Certificate>MIIC/TCCAeWgAwIBAgIJANOjX4q6lz9pMA0GCSqGSIb3DQEBBQUAMB0xGzAZBgNV
+							BAMTEnVtYnJlbGxhaWRwLnBzaS5jaDAeFw0xMzA2MDQxNjU2MjFaFw0yMzA2MDIx
+							NjU2MjFaMB0xGzAZBgNVBAMTEnVtYnJlbGxhaWRwLnBzaS5jaDCCASIwDQYJKoZI
+							hvcNAQEBBQADggEPADCCAQoCggEBANmQZDSOm10r0KA9pANe7RDNgEPc6eXGjOZq
+							cPr31EOqybxZCauUrHfcan9rX2I5UZc34AQxwR1KzXs7NFL2B0K8ObrjqUTkoUJ4
+							mS7pr9uhZv4niGNsONOgq/N8SgHBkB4fls5PwnpbyhLA6e5VNMUCXLpZ4XOXShrX
+							PYldVv4KoHHrbCecd25Eg8nMPH3kZK6W/QfqzGJOtm48eixUuerad8w1jJkXTTBK
+							W1UFCHcsEEQfkk8Ydm899vy0Dr6xUgEz1f1iFEJEtKUflZZD4J6CY/Df5AtVWtgc
+							1o6Y3yKmc597J4BSsh4S9J64iNwrrmL7Sk5CMKGZ7YwhUNZ4IF8CAwEAAaNAMD4w
+							HQYDVR0RBBYwFIISdW1icmVsbGFpZHAucHNpLmNoMB0GA1UdDgQWBBTbFbLVHola
+							gfOtqutFm+U3foq3qjANBgkqhkiG9w0BAQUFAAOCAQEAnrCABLbULQ6pWuTXEaBx
+							4qBl41rxIH8WrZhJPRIFeBe/Qx2Hm1rTOWSI7gVzjXbyixLHHxI1GJfd3l4xLmUS
+							iuqEiezxdYaZakFlO+AVA4gjUp+5sbhrmg84LgCsrnPJEHHFvcbuA7J1za7qGMUD
+							SULajbLIoimRJtzSwMcXw9sks0Lpzcr0p5ViD4GImZmZ3XflSKIkHvKtGm4X0IVH
+							r0ZEsrG5oOKOCDCj5yQMFNN/20Ins92M2BOLIrtMLZbgbXlqlJyMcBwEZTIbkt0O
+							FOy95s1cuFPmHqR4d/xHFrbVKsW7KfW2xARLzFeZiq50PyBXclGc/iKHEmZiJpes
+							ug==
+</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://umbrellaid.org/Shibboleth.sso/Artifact/SOAP"
+				index="0" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://umbrellaid.org/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://umbrellaid.org/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://umbrellaid.org/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://umbrellaid.org/Shibboleth.sso/SLO/Artifact" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://umbrellaid.org/Shibboleth.sso/SAML2/POST"
+				index="0" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://umbrellaid.org/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://umbrellaid.org/Shibboleth.sso/SAML2/Artifact"
+				index="2" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://umbrellaid.org/Shibboleth.sso/SAML2/ECP" index="3" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+				Location="https://umbrellaid.org/Shibboleth.sso/SAML/POST" index="4" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://umbrellaid.org/Shibboleth.sso/SAML/Artifact"
+				index="5" />
+		</SPSSODescriptor>
+		<Organization>
+			<OrganizationName xml:lang="en">Umbrella ID
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">Umbrella ID
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">Umbrella ID
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">Umbrella ID
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">https://umbrellaid.org/
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Umbrella</GivenName>
+			<SurName>Support</SurName>
+			<EmailAddress>mailto:bjoern.abt@psi.ch</EmailAddress>
+			<TelephoneNumber>+41563103509</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+
+	<!-- ESRF Metadata -->
+
+	<EntityDescriptor entityID="https://wwws.esrf.fr/shibboleth"
+		xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+		xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+		<SPSSODescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>webserv02</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=webserv02</ds:X509SubjectName>
+						<ds:X509Certificate>MIIC4jCCAcqgAwIBAgIJAOfmFhJtjvE1MA0GCSqGSIb3DQEBBQUAMBQxEjAQBgNV
+							BAMTCXdlYnNlcnYwMjAeFw0xMzA0MTcxMzI1NTVaFw0yMzA0MTUxMzI1NTVaMBQx
+							EjAQBgNVBAMTCXdlYnNlcnYwMjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+							ggEBALUr7OkNNqSzMajOTWQXp7jykMkdchLnesTu4mB8kliNia23YEv/14AuDaRJ
+							R3yoGSgJO+Jzw7vGyQzH1AZORha3QGv7gkRh03uca4MlmuyyqT/iq9crHSFz+mSA
+							+m7k3j4m/DoMRdCc5mRDhs4dGy27gFkK6Nxk1glj970H0wdmiII7LhJ62jB7f5r9
+							nU4k8NMRAHCZgBCGIAS9+zvCpOIElVg65ZXgmMUxyl6TDLNui1H/NWNfmV89hX5o
+							K4dbbqjqrPQr14g6SN+bLvtgp4H3OAE6aAhwED7+X1achFF8I4lkWERBvraJ1Qmp
+							y2slSv7iCXpc+vFxNdV50UZfz6UCAwEAAaM3MDUwFAYDVR0RBA0wC4IJd2Vic2Vy
+							djAyMB0GA1UdDgQWBBQPnuALX7OLljzVOQGuCKtGY/RRgDANBgkqhkiG9w0BAQUF
+							AAOCAQEATnIHC5KNwYq7x3PRSloV6SFGabZswqLU4nxQhTJdjhJ9xxpT4c+ibNxk
+							UHmu6WhxjJG7V3bo5GStvatGOHWu/q8UWYQrqf30k9uYFLmhgi1KuSZ7QaspReW+
+							M68BH2tItqVsmmZVL1XawDy5GaJ/ntVkCBbjV0x3jsYV9Ym7pK8NVRScb2PDvTjw
+							99cIwAHURoi4bcNvkFWRWNLilkL7RLRMRU1yn8ujkOUcRrrWv6mWxGlvbexu10c3
+							mVlifplJulE3tOx9Xmwc9y1a43Gl7UoyA+rIfS8N/6LwrY4QSYEl7RyU6aUMoBYN
+							sQRNRTiO1F8ll6ZeAjrOLFchTnSiGw==
+</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" />
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://wwws.esrf.fr/Shibboleth.sso/Artifact/SOAP"
+				index="1" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SLO/Artifact" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://wwws.esrf.fr/Shibboleth.sso/SAML2/POST"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="2" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SAML2/Artifact" index="3" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SAML2/ECP" index="4" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+				Location="https://wwws.esrf.fr/Shibboleth.sso/SAML/POST" index="5" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://wwws.esrf.fr/Shibboleth.sso/SAML/Artifact"
+				index="6" />
+		</SPSSODescriptor>
+		<Organization>
+			<OrganizationName xml:lang="en">esrf.eu
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">European
+				Synchrotron Radiation Facility
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">European
+				Synchrotron Radiation Facility
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">European
+				Synchrotron Radiation Facility
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">https://www.esrf.eu/
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Stefan</GivenName>
+			<SurName>Schulze</SurName>
+			<EmailAddress>mailto:stefan.schulze@esrf.eu</EmailAddress>
+			<TelephoneNumber>999</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+	<!-- PSI Metadata -->
+
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_f77183ab0c9f22a753abe34f02802f138b7501ca" entityID="https://duo.psi.ch/shibboleth">
+
+		<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+			<Extensions>
+				<init:RequestInitiator
+					xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+					Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+					Location="https://duo.psi.ch/Shibboleth.sso/Login" />
+				<idpdisc:DiscoveryResponse
+					xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+					Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+					Location="https://duo.psi.ch/Shibboleth.sso/Login" index="1" />
+			</Extensions>
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>Active</ds:KeyName>
+					<ds:KeyName>duo.psi.ch</ds:KeyName>
+					<ds:KeyName>https://duo.psi.ch/shibboleth</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=duo.psi.ch</ds:X509SubjectName>
+						<ds:X509Certificate>MIIDBDCCAeygAwIBAgIJALw4g8airg8PMA0GCSqGSIb3DQEBBQUAMBUxEzARBgNV
+							BAMTCmR1by5wc2kuY2gwHhcNMTMwNTI4MDgzNzI2WhcNMTYwNTI3MDgzNzI2WjAV
+							MRMwEQYDVQQDEwpkdW8ucHNpLmNoMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+							CgKCAQEAmUwA37W7pJgxvMT5VPf9GwPTrwlmGx7NGrDZxxChTxUQks4u5YDUkWKl
+							63dx/AggOFzp9UGaJKXvRJ+YaJHCYrzSRj9FdwAWOUjTwNEWKy+CITejq1U6c5LM
+							sUqse/lE8QGwjqOOV6F6FDqrmuCgaGmjmG8sY41z3ZxvOKD0yb6N/eEBSgmmdqZy
+							rjupxPztrSSKL6M+D+spd3iZJFhE/p9IYuI38FyveHE6pVa5UiOe4+tHECuOcmvD
+							2tcjlIGupSbW8WV0jnMso/LGDjHKvFCjrAwS4Ys8a4RNEhfgDdj31g9l8rveKvOS
+							3cnrfUhCrQspKbn7AQLVHR5tMmJHSQIDAQABo1cwVTA0BgNVHREELTArggpkdW8u
+							cHNpLmNohh1odHRwczovL2R1by5wc2kuY2gvc2hpYmJvbGV0aDAdBgNVHQ4EFgQU
+							fuWfS47iU5CoTnJYDvjD0qII2b0wDQYJKoZIhvcNAQEFBQADggEBAH31mhUJGViN
+							uPN2LnnkLJ9+MkYvxsAIzQsWwtbxEHZtNu//lWTbiylTMoOwDfxw+AHoFjVJzi68
+							p6og9pVjw0jM01e/pXkw3JG1roTkHlQ7RslRxFNlwPz99bjPmmnoUrScw9OQX3mi
+							wl6/HNNdXm+CydAof8k0kHcvidQxzQUuAv+q+wdStYPotpw/AhUWRG1Wh24QUfia
+							utBItMV1Ypxymosn/+9jDS5/JqRZ4Y1uMvcZJcHnsmpwSjWsZP9Z90wp1IE01hVz
+							twyVMKH4iLIwMDaT2x2sbC4IHLbYgTx6Jc3MWWZb5K/BGMlHRUeRBweqS2oCsKDa
+							gCJXbx2Gqtg=
+</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" />
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://duo.psi.ch/Shibboleth.sso/Artifact/SOAP"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://duo.psi.ch/Shibboleth.sso/SAML2/POST"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://duo.psi.ch/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="2" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://duo.psi.ch/Shibboleth.sso/SAML2/Artifact" index="3" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://duo.psi.ch/Shibboleth.sso/SAML2/ECP" index="4" />
+		</SPSSODescriptor>
+
+		<Organization>
+			<OrganizationName xml:lang="en">duo.psi.ch
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">PSI DUO
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">PSI DUO
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">PSI DUO
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">https://duo.psi.ch/
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Markus</GivenName>
+			<SurName>Knecht</SurName>
+			<EmailAddress>mailto:markus.knecht@psi.ch</EmailAddress>
+			<TelephoneNumber>+41563105354</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_fbed0ebb69b292d4f975ae268b9a6664f32ed295" entityID="https://duotest.psi.ch/shibboleth">
+
+		<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+			<Extensions>
+				<init:RequestInitiator
+					xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+					Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
+					Location="https://duotest.psi.ch/Shibboleth.sso/Login" />
+				<idpdisc:DiscoveryResponse
+					xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+					Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+					Location="https://duotest.psi.ch/Shibboleth.sso/Login" index="1" />
+			</Extensions>
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>Active</ds:KeyName>
+					<ds:KeyName>duotest.psi.ch</ds:KeyName>
+					<ds:KeyName>https://duotest.psi.ch/shibboleth</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=duotest.psi.ch</ds:X509SubjectName>
+						<ds:X509Certificate>MIIDFDCCAfygAwIBAgIJAOz8WF79mGtcMA0GCSqGSIb3DQEBBQUAMBkxFzAVBgNV
+							BAMTDmR1b3Rlc3QucHNpLmNoMB4XDTEzMDUwMjEzMjA1OFoXDTE2MDUwMTEzMjA1
+							OFowGTEXMBUGA1UEAxMOZHVvdGVzdC5wc2kuY2gwggEiMA0GCSqGSIb3DQEBAQUA
+							A4IBDwAwggEKAoIBAQDf/C6blvSLfpf34GbJRcQOAoeLrNic5y/qlgx0YO6GPy9S
+							C493yT+CALvY2mVKCiafMEUoXnLPMLGiMTnhj8DUuDXJSNtl4NrNSrSIKFm7o61M
+							NbxAE4uZlsaQlaeIFK4B0MLzkLQU15irWKzohTjOV5OWuYDbZE50sjsIDi240jnG
+							EGAyR5EHPJk16eN61NF23UAY6it7GCPueYjWV14NjOMTl2YIJithwDkFDVT7r6nM
+							ZrvVqA4pnd8vFN5xUdRoZD7VWTSvNihVUaPag4uLle0rNKfkkzag7W+gufuEfDU4
+							GgTOUAUMCb2f9/3TJqRQxuOayXru7FA34YqsGGYJAgMBAAGjXzBdMDwGA1UdEQQ1
+							MDOCDmR1b3Rlc3QucHNpLmNohiFodHRwczovL2R1b3Rlc3QucHNpLmNoL3NoaWJi
+							b2xldGgwHQYDVR0OBBYEFMC6Rw4mAtYy6lR2okYYt6YoYtXVMA0GCSqGSIb3DQEB
+							BQUAA4IBAQBNvPyK8rRJ0m+wrGlkHWxJkwjxcBFYowWf0HLDyn2jeRdF6EfHWyeu
+							AsjRGNuIRjiSxQ2pNgI+djFM7fJE+vjBk15mEnV2xHIQhxkdK5vlh4MI9T0k8v27
+							2AUgJed8qjxUhegGyggyD9sNWAViS9KZjN4pFg9LzYbUT59jzFsAqvr2/rzIIcOp
+							N+2aFJByVCrKlgrPczgTS2KHptRgOe7eLGfQIwtKi2VEty1fq/GCS2RvN4MhoWfd
+							hRenqhb2hmFhZYUDYffQpqjD25EMajU0R7lw7LXD+w1+dG1+8dUjvDKzo4ZHw+Ra
+							Dv8QbMzuod7JrxH7bbk+l6jYrPMFzIvS
+</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" />
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://duotest.psi.ch/Shibboleth.sso/Artifact/SOAP"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://duotest.psi.ch/Shibboleth.sso/SAML2/POST"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://duotest.psi.ch/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="2" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://duotest.psi.ch/Shibboleth.sso/SAML2/Artifact"
+				index="3" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://duotest.psi.ch/Shibboleth.sso/SAML2/ECP" index="4" />
+		</SPSSODescriptor>
+
+		<Organization>
+			<OrganizationName xml:lang="en">duotest.psi.ch
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">PSI DUOtest
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">PSI DUOtest
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">PSI DUOtest
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">https://duotest.psi.ch/
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Markus</GivenName>
+			<SurName>Knecht</SurName>
+			<EmailAddress>mailto:markus.knecht@psi.ch</EmailAddress>
+			<TelephoneNumber>+41563105354</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+	<!-- PaNdata Metadata -->
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_bb1e5cfd2713d11e93d39d0afbb12b2175c9e1fa" entityID="https://software.pan-data.eu/shibboleth">
+
+		<SPSSODescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>pansoft</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=pansoft</ds:X509SubjectName>
+						<ds:X509Certificate>MIIC3DCCAcSgAwIBAgIJAOn5xxJnZJo0MA0GCSqGSIb3DQEBBQUAMBIxEDAOBgNV
+							BAMTB3BhbnNvZnQwHhcNMTMwNTEzMTQxMjU1WhcNMjMwNTExMTQxMjU1WjASMRAw
+							DgYDVQQDEwdwYW5zb2Z0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+							r5MwRRO1D9696kINSk3z7KX+phHf8mi3cG6IY6pG9fgqC0hUK5nPxRqdNGOUCbH+
+							AUZCtqXkW2rtNh2ig9EKuVZ90mTmF6yBurjdBtqrXpxHb4/blCd3MtCkA6aXd9e+
+							nho3l1I02tu+i6tGG9fDk3wn5QYpqOAzaq1uE5N3/EVu5a6SN1iLNfY7PuFXqVcb
+							9ybUXBQyUNrKJJLwB9o90saGyjU9WJ244yxA12F9NUiUfgFX5Qgl12bOjwBPDCHi
+							p0MGBMKTqS1VUcvpMZyqtGZUs9M+kWy1L7//IGqY41wgvi/ABwG1VZb+oeSqDgRj
+							qRZaycTNgbjRbiqO3Kz7wQIDAQABozUwMzASBgNVHREECzAJggdwYW5zb2Z0MB0G
+							A1UdDgQWBBTjt10i5HTNYxbVg9Nse/1qmwQNLTANBgkqhkiG9w0BAQUFAAOCAQEA
+							gMxaHE9WA/O7mdX5QJf3ngxu8+I6ZZ4IcbJNOMz8AFGIdrfsVe6uxkseFC93wceC
+							e/k/wfrOL76YmgC34cUffvrElQrAoo+4dLyveiheihj9fzADuRV+tx6RN9dApeyS
+							BVeACPil8Z5R38a2fDnh0engf19TIbgEWNQQl1zoQse29Qy55EndFcAtZj3cabas
+							TzmehA31eY/HHWYsmXBWAF+1mBVurZaLKE4pUGV/XJxdt5GUmXZZrkRmNZTtA+bT
+							BayvBQEyW03XNbE2ss+bS63asd5Q8Tbi3uPBnzoLO2mo2V711gbCaPdG/kyq13A9
+							sXcJdDoWacJcSPhD5iv+4g==
+</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://software.pan-data.eu/Shibboleth.sso/Artifact/SOAP"
+				index="0" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SLO/Artifact" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://software.pan-data.eu/Shibboleth.sso/SAML2/POST"
+				index="0" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SAML2/Artifact"
+				index="2" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SAML2/ECP"
+				index="3" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+				Location="https://software.pan-data.eu/Shibboleth.sso/SAML/POST"
+				index="4" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://software.pan-data.eu/Shibboleth.sso/SAML/Artifact"
+				index="5" />
+		</SPSSODescriptor>
+		<Organization>
+			<OrganizationName xml:lang="en">software.pan-data.eu
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">PaNdata
+				Software
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">PaNdata
+				Software
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">PaNdata
+				Software
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">https://software.pan-data.eu/
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Jamie</GivenName>
+			<SurName>Hall</SurName>
+			<EmailAddress>mailto:hall@ill.eu</EmailAddress>
+			<TelephoneNumber>999</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+	<!-- ILL Metadata -->
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_84fe33c4b76a0b9566e0e96b4366cedf" entityID="https://casshib.ill.fr/shibboleth">
+
+		<SPSSODescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<KeyDescriptor use="signing">
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>casshib.ill.fr</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=casshib.ill.fr</ds:X509SubjectName>
+						<ds:X509Certificate>MIIC8TCCAdmgAwIBAgIJAP1YXgGSKyk+MA0GCSqGSIb3DQEBBQUAMBkxFzAVBgNV
+							BAMTDmNhc3NoaWIuaWxsLmZyMB4XDTEzMDUxMzE1NTkwOFoXDTIzMDUxMTE1NTkw
+							OFowGTEXMBUGA1UEAxMOY2Fzc2hpYi5pbGwuZnIwggEiMA0GCSqGSIb3DQEBAQUA
+							A4IBDwAwggEKAoIBAQDS32R7ddYezFQvwMiSLYVW+y3TTRUGOL0vwPC7OuVKptJK
+							b7fbiDIeCjjcs/61qvCw19E18+oAEZdL7Q+HI5lJz3jDuvoVMtBHA+JPCmJzfUEv
+							nAGdU6xayE3n8dFyfkehXsBWNzekCPzszn/JKvvSCuS35FJcfx2fbCJMFzn/MCVX
+							Ks+XBuc5ZWDT4pnSjS3iHImuRLWFARa5EHU3v/7+Y4PF8aIH36S/3tvadwK6Kac5
+							6YeI8v9/GRFFzV9Gu08scxHw5tofVBIEt/en96iaMiz2chP8KXVY6SBateP4I/5Z
+							QdPo8cv3oBmrjgjqG9u4m7dnDGBfUmg4t5FrsK9tAgMBAAGjPDA6MBkGA1UdEQQS
+							MBCCDmNhc3NoaWIuaWxsLmZyMB0GA1UdDgQWBBSnaShEiTCP6QyW/yxdRqUCuRtk
+							xjANBgkqhkiG9w0BAQUFAAOCAQEAawfNpuKh/fLRA06eYc2OxX0lcvG4F60q9NYC
+							+D+3+AijXmi6li1kY8WS+XOsyDG6mdGtrCL9n1NadHuFZ/ntFSemOAzuoKwpCOL7
+							XM+j4svgaKsA9Z47bsAdE5bMqcGJwO1zowui9iB/lXxv4wgQrngxXssao9biTfkv
+							rJZtINi2JlhY8KT/V7gWG7d5YCTrmSaj5MceVcAFXhS5Ed3OnXIKCoq29a2YwHmJ
+							7u0WABT4AQMpDbWFy1h750O9Y40qcKYwNpOyq4AGEIXVbOpbdZHom/wMHRfntT/v
+							042HGn6kysjf9a4jiBsAmnvDFvJjOd6bpwDGM77XASYVEjoP5g==
+						</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+			<KeyDescriptor use="encryption">
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>casshib.ill.fr</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=casshib.ill.fr</ds:X509SubjectName>
+						<ds:X509Certificate>MIIC8TCCAdmgAwIBAgIJAP1YXgGSKyk+MA0GCSqGSIb3DQEBBQUAMBkxFzAVBgNV
+							BAMTDmNhc3NoaWIuaWxsLmZyMB4XDTEzMDUxMzE1NTkwOFoXDTIzMDUxMTE1NTkw
+							OFowGTEXMBUGA1UEAxMOY2Fzc2hpYi5pbGwuZnIwggEiMA0GCSqGSIb3DQEBAQUA
+							A4IBDwAwggEKAoIBAQDS32R7ddYezFQvwMiSLYVW+y3TTRUGOL0vwPC7OuVKptJK
+							b7fbiDIeCjjcs/61qvCw19E18+oAEZdL7Q+HI5lJz3jDuvoVMtBHA+JPCmJzfUEv
+							nAGdU6xayE3n8dFyfkehXsBWNzekCPzszn/JKvvSCuS35FJcfx2fbCJMFzn/MCVX
+							Ks+XBuc5ZWDT4pnSjS3iHImuRLWFARa5EHU3v/7+Y4PF8aIH36S/3tvadwK6Kac5
+							6YeI8v9/GRFFzV9Gu08scxHw5tofVBIEt/en96iaMiz2chP8KXVY6SBateP4I/5Z
+							QdPo8cv3oBmrjgjqG9u4m7dnDGBfUmg4t5FrsK9tAgMBAAGjPDA6MBkGA1UdEQQS
+							MBCCDmNhc3NoaWIuaWxsLmZyMB0GA1UdDgQWBBSnaShEiTCP6QyW/yxdRqUCuRtk
+							xjANBgkqhkiG9w0BAQUFAAOCAQEAawfNpuKh/fLRA06eYc2OxX0lcvG4F60q9NYC
+							+D+3+AijXmi6li1kY8WS+XOsyDG6mdGtrCL9n1NadHuFZ/ntFSemOAzuoKwpCOL7
+							XM+j4svgaKsA9Z47bsAdE5bMqcGJwO1zowui9iB/lXxv4wgQrngxXssao9biTfkv
+							rJZtINi2JlhY8KT/V7gWG7d5YCTrmSaj5MceVcAFXhS5Ed3OnXIKCoq29a2YwHmJ
+							7u0WABT4AQMpDbWFy1h750O9Y40qcKYwNpOyq4AGEIXVbOpbdZHom/wMHRfntT/v
+							042HGn6kysjf9a4jiBsAmnvDFvJjOd6bpwDGM77XASYVEjoP5g==
+						</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://195.83.127.95/Shibboleth.sso/Artifact/SOAP"
+				index="1" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="http://195.83.127.95/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="http://195.83.127.95/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="http://195.83.127.95/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="http://195.83.127.95/Shibboleth.sso/SLO/Artifact" />
+			<ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="http://195.83.127.95/Shibboleth.sso/NIM/SOAP" />
+			<ManageNameIDService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="http://195.83.127.95/Shibboleth.sso/NIM/Redirect" />
+			<ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="http://195.83.127.95/Shibboleth.sso/NIM/POST" />
+			<ManageNameIDService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="http://195.83.127.95/Shibboleth.sso/NIM/Artifact" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://195.83.127.95/Shibboleth.sso/SAML2/POST"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="http://195.83.127.95/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="2" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="http://195.83.127.95/Shibboleth.sso/SAML2/Artifact" index="3" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="http://195.83.127.95/Shibboleth.sso/SAML2/ECP" index="4" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+				Location="http://195.83.127.95/Shibboleth.sso/SAML/POST" index="5" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="http://195.83.127.95/Shibboleth.sso/SAML/Artifact"
+				index="6" />
+		</SPSSODescriptor>
+
+		<Organization>
+			<OrganizationName xml:lang="en">casshib.ill.eu
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">ILL Casshib
+				test
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">ILL Casshib
+				test
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">ILL Casshib
+				test
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">http://ill.eu
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Jean-François</GivenName>
+			<SurName>Perrin</SurName>
+			<EmailAddress>mailto:perrin@ill.eu</EmailAddress>
+			<TelephoneNumber>999</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+	<EntityDescriptor entityID="https://casshib.ill.fr/authsaml2/metadata">
+		<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:X509Data>
+						<ds:X509Certificate>MIIDIzCCAgugAwIBAgIJANUBoick1pDpMA0GCSqGSIb3DQEBBQUAMBUxEzARBgNV
+							BAoTCkVudHJvdXZlcnQwHhcNMTAxMjE0MTUzMzAyWhcNMTEwMTEzMTUzMzAyWjAV
+							MRMwEQYDVQQKEwpFbnRyb3V2ZXJ0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+							CgKCAQEAvxFkfPdndlGgQPDZgFGXbrNAc/79PULZBuNdWFHDD9P5hNhZn9Kqm4Cp
+							06Pe/A6u+g5wLnYvbZQcFCgfQAEzziJtb3J55OOlB7iMEI/T2AX2WzrUH8QT8NGh
+							ABONKU2Gg4XiyeXNhH5R7zdHlUwcWq3ZwNbtbY0TVc+n665EbrfV/59xihSqsoFr
+							kmBLH0CoepUXtAzA7WDYn8AzusIuMx3n8844pJwgxhTB7Gjuboptlz9Hri8JRdXi
+							VT9OS9Wt69ubcNoM6zuKASmtm48UuGnhj8v6XwvbjKZrL9kA+xf8ziazZfvvw/VG
+							Tm+IVFYB7d1x457jY5zjjXJvNysoowIDAQABo3YwdDAdBgNVHQ4EFgQUeF8ePnu0
+							fcAK50iBQDgAhHkOu8kwRQYDVR0jBD4wPIAUeF8ePnu0fcAK50iBQDgAhHkOu8mh
+							GaQXMBUxEzARBgNVBAoTCkVudHJvdXZlcnSCCQDVAaInJNaQ6TAMBgNVHRMEBTAD
+							AQH/MA0GCSqGSIb3DQEBBQUAA4IBAQAy8l3GhUtpPHx0FxzbRHVaaUSgMwYKGPhE
+							IdGhqekKUJIx8et4xpEMFBl5XQjBNq/mp5vO3SPb2h2PVSks7xWnG3cvEkqJSOeo
+							fEEhkqnM45b2MH1S5uxp4i8UilPG6kmQiXU2rEUBdRk9xnRWos7epVivTSIv1Ncp
+							lG6l41SXp6YgIb2ToT+rOKdIGIQuGDlzeR88fDxWEU0vEujZv/v1PE1YOV0xKjTT
+							JumlBc6IViKhJeo1wiBBrVRIIkKKevHKQzteK8pWm9CYWculxT26TZ4VWzGbo06j
+							o2zbumirrLLqnt1gmBDvDvlOwC/zAAyL4chbz66eQHTiIYZZvYgy
+						</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://casshib.ill.fr/authsaml2/singleLogout"
+				ResponseLocation="https://casshib.ill.fr/authsaml2/singleLogoutReturn" />
+			<ManageNameIDService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://casshib.ill.fr/authsaml2/manageNameId"
+				ResponseLocation="https://casshib.ill.fr/authsaml2/manageNameIdReturn" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://casshib.ill.fr/authsaml2/singleSignOnPost"
+				index="1" />
+		</SPSSODescriptor>
+
+		<Organization>
+			<OrganizationName xml:lang="en">casshib.ill.eu
+			</OrganizationName>
+			<OrganizationDisplayName xml:lang="de">ILL Casshib
+				test
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="en">ILL Casshib
+				test
+			</OrganizationDisplayName>
+			<OrganizationDisplayName xml:lang="fr">ILL Casshib
+				test
+			</OrganizationDisplayName>
+			<OrganizationURL xml:lang="en">http://ill.eu
+			</OrganizationURL>
+		</Organization>
+		<ContactPerson contactType="support">
+			<GivenName>Jean-François</GivenName>
+			<SurName>Perrin</SurName>
+			<EmailAddress>mailto:perrin@ill.eu</EmailAddress>
+			<TelephoneNumber>999</TelephoneNumber>
+		</ContactPerson>
+	</EntityDescriptor>
+
+	<EntityDescriptor entityID="https://auth.ill.eu/authsaml2/metadata"
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata">
+	<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<KeyDescriptor>
+			<ns1:KeyInfo xmlns:ns1="http://www.w3.org/2000/09/xmldsig#">
+				<ns1:X509Data>
+					<ns1:X509Certificate>MIICZzCCAdACCQDKVXw8xENijzANBgkqhkiG9w0BAQUFADB4MQswCQYDVQQGEwJG
+						UjETMBEGA1UECBMKU29tZS1TdGF0ZTERMA8GA1UEBxMIR3Jlbm9ibGUxDDAKBgNV
+						BAoTA0lMTDELMAkGA1UECxMCSVQxDDAKBgNVBAMTA2lsbDEYMBYGCSqGSIb3DQEJ
+						ARYJc2lAaWxsLmZyMB4XDTEzMDYxNDEyMDYzMVoXDTIzMDYxMjEyMDYzMVoweDEL
+						MAkGA1UEBhMCRlIxEzARBgNVBAgTClNvbWUtU3RhdGUxETAPBgNVBAcTCEdyZW5v
+						YmxlMQwwCgYDVQQKEwNJTEwxCzAJBgNVBAsTAklUMQwwCgYDVQQDEwNpbGwxGDAW
+						BgkqhkiG9w0BCQEWCXNpQGlsbC5mcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkC
+						gYEAxYGan4VxNqGpq0Px/Qfz4Kb+mNcOMkGceHF1DebHfpc59WHvJthMYxK4jnj+
+						7/sW1v/BfGuPtXPLcglbnpT9B+CHlFF0GzqS5jHCAOtrVpJ6HpNrL95ktfuPx2TB
+						5nE4QmVvlWL6+/hNcy3iLBVd04xBr39iHJP0yuGJmrANDqkCAwEAATANBgkqhkiG
+						9w0BAQUFAAOBgQBHarJ7u1w8gpC60rQtyVO66YaozzDW6m7qKj5u5CPyTmG6BLBz
+						L8S1W38HNsrnxXlFDdSJq5k6cXf44Iiblpc70FLPVZi3VSNCnbN0HNwq8ruh3xvs
+						/3D63l4reeSBJ1SHREzWzIs+WrTRx377K/Sz4KYxCmKu3y2kT+VHhvbdFQ==
+					</ns1:X509Certificate>
+				</ns1:X509Data>
+			</ns1:KeyInfo>
+		</KeyDescriptor>
+		<SingleLogoutService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+			Location="https://auth.ill.eu/authsaml2/singleLogout"
+			ResponseLocation="https://auth.ill.eu/authsaml2/singleLogoutReturn" />
+		<ManageNameIDService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+			Location="https://auth.ill.eu/authsaml2/manageNameId"
+			ResponseLocation="https://auth.ill.eu/authsaml2/manageNameIdReturn" />
+		<AssertionConsumerService
+			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.ill.eu/authsaml2/singleSignOnPost"
+			index="1" />
+	</SPSSODescriptor>
+</EntityDescriptor>
+</EntitiesDescriptor>
