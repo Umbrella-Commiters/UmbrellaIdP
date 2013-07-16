@@ -125,10 +125,11 @@ String lan = (String)sess.getAttribute("lang");
 			<p>
 				<input value="true" name="HiddenWiki" type="hidden"></input>
 			</p>
+			<!-- 
 			<ul class="BreadCrumb">
 				<li><button disabled="" class="BreadCrumbButton" value="0"
 						type="submit" name="BreadCrumbButton">Help</button></li>
-			</ul>
+			</ul> -->
 			<ul class="BreadCrumbChildren">
 				<li><button class="BreadCrumbButton" value="1" type="submit"
 						name="Child">
@@ -137,23 +138,23 @@ String lan = (String)sess.getAttribute("lang");
 					<ul class="BreadCrumbGrandChildren">
 						<li><button class="BreadCrumbGrandChildrenButton" value="5"
 								type="submit" name="Child">
-								Core Team <span class="BreadCrumbArrow"> &#8628;</span>
+								Core Team
 							</button></li>
 						<li><button class="BreadCrumbGrandChildrenButton" value="3"
 								type="submit" name="Child">
-								Management Team <span class="BreadCrumbArrow"> &#8628;</span>
+								Management Team
 							</button></li>
 						<li><button class="BreadCrumbGrandChildrenButton" value="4"
 								type="submit" name="Child">
-								Technical Team <span class="BreadCrumbArrow"> &#8628;</span>
+								Technical Team
 							</button></li>
 						<li><button class="BreadCrumbGrandChildrenButton" value="2"
 								type="submit" name="Child">
-								Partners <span class="BreadCrumbArrow"> &#8628;</span>
+								Partners
 							</button></li>
 						<li><button class="BreadCrumbGrandChildrenButton" value="12"
 								type="submit" name="Child">
-								Facilities <span class="BreadCrumbArrow"> &#8628;</span>
+								Facilities
 							</button></li>
 					</ul></li>
 				<li class="BreadCrumbSeparator">|</li>
@@ -185,18 +186,19 @@ String lan = (String)sess.getAttribute("lang");
 						<li><button class="BreadCrumbGrandChildrenButton" value="28"
 								type="submit" name="Child">Background information</button></li>
 					</ul></li>
+					<!-- 
 				<li class="BreadCrumbSeparator">|</li>
 				<li><button class="BreadCrumbButton" value="30" type="submit"
 						name="Child">
 						Services <span class="BreadCrumbArrow"> &#8628;</span>
 					</button>
 					<ul class="BreadCrumbGrandChildren">
-						<!--<li>
+						<li>
 									<button name="Child" type="submit" value="32" class="BreadCrumbGrandChildrenButton">Wiki</button>
 								</li>
 								<li>
 									<button name="Child" type="submit" value="36" class="BreadCrumbGrandChildrenButton">Issue Tracker</button>
-								</li>-->
+								</li>
 					</ul></li>
 				<li class="BreadCrumbSeparator">|</li>
 				<li><button class="BreadCrumbButton" value="40" type="submit"
@@ -204,10 +206,11 @@ String lan = (String)sess.getAttribute("lang");
 						User Offices <span class="BreadCrumbArrow"> &#8628;</span>
 					</button>
 					<ul class="BreadCrumbGrandChildren"></ul></li>
+					-->
 				<li class="BreadCrumbSeparator">|</li>
 				<li><button class="BreadCrumbButton" value="50" type="submit"
 						name="Child">
-						Help <span class="BreadCrumbArrow"> &#8628;</span>
+						Cookbook <span class="BreadCrumbArrow"> &#8628;</span>
 					</button>
 					<ul class="BreadCrumbGrandChildren"></ul></li>
 			</ul>
