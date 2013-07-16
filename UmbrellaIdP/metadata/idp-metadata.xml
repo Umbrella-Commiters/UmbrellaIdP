@@ -123,7 +123,7 @@
 				Location="https://umbrellaid.org/idp/profile/SAML2/SOAP/AttributeQuery" />
 
 			<NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
-			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient
+			<NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent
 			</NameIDFormat>
 
 		</AttributeAuthorityDescriptor>
