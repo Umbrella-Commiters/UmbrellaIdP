@@ -35,7 +35,7 @@
 							XIaSBz4HVNIeWhIOFulnZJL3KNCrYw5ZA1HNXOYH3jitW1z5mjNmfEv6Zr+ca7XP
 							vm/G4x7IQ8Y=
 
-                    </ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 			</KeyDescriptor>
@@ -111,7 +111,7 @@
 							XIaSBz4HVNIeWhIOFulnZJL3KNCrYw5ZA1HNXOYH3jitW1z5mjNmfEv6Zr+ca7XP
 							vm/G4x7IQ8Y=
 
-                    </ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 			</KeyDescriptor>
@@ -175,7 +175,7 @@
 							r0ZEsrG5oOKOCDCj5yQMFNN/20Ins92M2BOLIrtMLZbgbXlqlJyMcBwEZTIbkt0O
 							FOy95s1cuFPmHqR4d/xHFrbVKsW7KfW2xARLzFeZiq50PyBXclGc/iKHEmZiJpes
 							ug==
-</ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 			</KeyDescriptor>
@@ -262,7 +262,7 @@
 							99cIwAHURoi4bcNvkFWRWNLilkL7RLRMRU1yn8ujkOUcRrrWv6mWxGlvbexu10c3
 							mVlifplJulE3tOx9Xmwc9y1a43Gl7UoyA+rIfS8N/6LwrY4QSYEl7RyU6aUMoBYN
 							sQRNRTiO1F8ll6ZeAjrOLFchTnSiGw==
-</ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
@@ -328,21 +328,14 @@
 	</EntityDescriptor>
 
 	<!-- PSI Metadata -->
-
-
 	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
 		ID="_f77183ab0c9f22a753abe34f02802f138b7501ca" entityID="https://duo.psi.ch/shibboleth">
-
 		<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
 			<Extensions>
 				<init:RequestInitiator
 					xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
 					Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init"
 					Location="https://duo.psi.ch/Shibboleth.sso/Login" />
-				<idpdisc:DiscoveryResponse
-					xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-					Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
-					Location="https://duo.psi.ch/Shibboleth.sso/Login" index="1" />
 			</Extensions>
 			<KeyDescriptor>
 				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
@@ -368,7 +361,7 @@
 							utBItMV1Ypxymosn/+9jDS5/JqRZ4Y1uMvcZJcHnsmpwSjWsZP9Z90wp1IE01hVz
 							twyVMKH4iLIwMDaT2x2sbC4IHLbYgTx6Jc3MWWZb5K/BGMlHRUeRBweqS2oCsKDa
 							gCJXbx2Gqtg=
-</ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
@@ -381,6 +374,16 @@
 			<ArtifactResolutionService
 				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://duo.psi.ch/Shibboleth.sso/Artifact/SOAP"
 				index="1" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://duo.psi.ch/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://duo.psi.ch/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://duo.psi.ch/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://duo.psi.ch/Shibboleth.sso/SLO/Artifact" />
 			<AssertionConsumerService
 				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://duo.psi.ch/Shibboleth.sso/SAML2/POST"
 				index="1" />
@@ -413,6 +416,7 @@
 			<EmailAddress>mailto:markus.knecht@psi.ch</EmailAddress>
 			<TelephoneNumber>+41563105354</TelephoneNumber>
 		</ContactPerson>
+
 	</EntityDescriptor>
 
 	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
@@ -453,7 +457,7 @@
 							N+2aFJByVCrKlgrPczgTS2KHptRgOe7eLGfQIwtKi2VEty1fq/GCS2RvN4MhoWfd
 							hRenqhb2hmFhZYUDYffQpqjD25EMajU0R7lw7LXD+w1+dG1+8dUjvDKzo4ZHw+Ra
 							Dv8QbMzuod7JrxH7bbk+l6jYrPMFzIvS
-</ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
@@ -529,7 +533,7 @@
 							TzmehA31eY/HHWYsmXBWAF+1mBVurZaLKE4pUGV/XJxdt5GUmXZZrkRmNZTtA+bT
 							BayvBQEyW03XNbE2ss+bS63asd5Q8Tbi3uPBnzoLO2mo2V711gbCaPdG/kyq13A9
 							sXcJdDoWacJcSPhD5iv+4g==
-</ds:X509Certificate>
+						</ds:X509Certificate>
 					</ds:X509Data>
 				</ds:KeyInfo>
 			</KeyDescriptor>
@@ -777,39 +781,39 @@
 	</EntityDescriptor>
 
 	<EntityDescriptor entityID="https://auth.ill.eu/authsaml2/metadata"
-	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata">
-	<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
-		<KeyDescriptor>
-			<ns1:KeyInfo xmlns:ns1="http://www.w3.org/2000/09/xmldsig#">
-				<ns1:X509Data>
-					<ns1:X509Certificate>MIICZzCCAdACCQDKVXw8xENijzANBgkqhkiG9w0BAQUFADB4MQswCQYDVQQGEwJG
-						UjETMBEGA1UECBMKU29tZS1TdGF0ZTERMA8GA1UEBxMIR3Jlbm9ibGUxDDAKBgNV
-						BAoTA0lMTDELMAkGA1UECxMCSVQxDDAKBgNVBAMTA2lsbDEYMBYGCSqGSIb3DQEJ
-						ARYJc2lAaWxsLmZyMB4XDTEzMDYxNDEyMDYzMVoXDTIzMDYxMjEyMDYzMVoweDEL
-						MAkGA1UEBhMCRlIxEzARBgNVBAgTClNvbWUtU3RhdGUxETAPBgNVBAcTCEdyZW5v
-						YmxlMQwwCgYDVQQKEwNJTEwxCzAJBgNVBAsTAklUMQwwCgYDVQQDEwNpbGwxGDAW
-						BgkqhkiG9w0BCQEWCXNpQGlsbC5mcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkC
-						gYEAxYGan4VxNqGpq0Px/Qfz4Kb+mNcOMkGceHF1DebHfpc59WHvJthMYxK4jnj+
-						7/sW1v/BfGuPtXPLcglbnpT9B+CHlFF0GzqS5jHCAOtrVpJ6HpNrL95ktfuPx2TB
-						5nE4QmVvlWL6+/hNcy3iLBVd04xBr39iHJP0yuGJmrANDqkCAwEAATANBgkqhkiG
-						9w0BAQUFAAOBgQBHarJ7u1w8gpC60rQtyVO66YaozzDW6m7qKj5u5CPyTmG6BLBz
-						L8S1W38HNsrnxXlFDdSJq5k6cXf44Iiblpc70FLPVZi3VSNCnbN0HNwq8ruh3xvs
-						/3D63l4reeSBJ1SHREzWzIs+WrTRx377K/Sz4KYxCmKu3y2kT+VHhvbdFQ==
-					</ns1:X509Certificate>
-				</ns1:X509Data>
-			</ns1:KeyInfo>
-		</KeyDescriptor>
-		<SingleLogoutService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-			Location="https://auth.ill.eu/authsaml2/singleLogout"
-			ResponseLocation="https://auth.ill.eu/authsaml2/singleLogoutReturn" />
-		<ManageNameIDService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
-			Location="https://auth.ill.eu/authsaml2/manageNameId"
-			ResponseLocation="https://auth.ill.eu/authsaml2/manageNameIdReturn" />
-		<AssertionConsumerService
-			Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.ill.eu/authsaml2/singleSignOnPost"
-			index="1" />
-	</SPSSODescriptor>
-</EntityDescriptor>
+		xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata">
+		<SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+			<KeyDescriptor>
+				<ns1:KeyInfo xmlns:ns1="http://www.w3.org/2000/09/xmldsig#">
+					<ns1:X509Data>
+						<ns1:X509Certificate>MIICZzCCAdACCQDKVXw8xENijzANBgkqhkiG9w0BAQUFADB4MQswCQYDVQQGEwJG
+							UjETMBEGA1UECBMKU29tZS1TdGF0ZTERMA8GA1UEBxMIR3Jlbm9ibGUxDDAKBgNV
+							BAoTA0lMTDELMAkGA1UECxMCSVQxDDAKBgNVBAMTA2lsbDEYMBYGCSqGSIb3DQEJ
+							ARYJc2lAaWxsLmZyMB4XDTEzMDYxNDEyMDYzMVoXDTIzMDYxMjEyMDYzMVoweDEL
+							MAkGA1UEBhMCRlIxEzARBgNVBAgTClNvbWUtU3RhdGUxETAPBgNVBAcTCEdyZW5v
+							YmxlMQwwCgYDVQQKEwNJTEwxCzAJBgNVBAsTAklUMQwwCgYDVQQDEwNpbGwxGDAW
+							BgkqhkiG9w0BCQEWCXNpQGlsbC5mcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkC
+							gYEAxYGan4VxNqGpq0Px/Qfz4Kb+mNcOMkGceHF1DebHfpc59WHvJthMYxK4jnj+
+							7/sW1v/BfGuPtXPLcglbnpT9B+CHlFF0GzqS5jHCAOtrVpJ6HpNrL95ktfuPx2TB
+							5nE4QmVvlWL6+/hNcy3iLBVd04xBr39iHJP0yuGJmrANDqkCAwEAATANBgkqhkiG
+							9w0BAQUFAAOBgQBHarJ7u1w8gpC60rQtyVO66YaozzDW6m7qKj5u5CPyTmG6BLBz
+							L8S1W38HNsrnxXlFDdSJq5k6cXf44Iiblpc70FLPVZi3VSNCnbN0HNwq8ruh3xvs
+							/3D63l4reeSBJ1SHREzWzIs+WrTRx377K/Sz4KYxCmKu3y2kT+VHhvbdFQ==
+						</ns1:X509Certificate>
+					</ns1:X509Data>
+				</ns1:KeyInfo>
+			</KeyDescriptor>
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://auth.ill.eu/authsaml2/singleLogout"
+				ResponseLocation="https://auth.ill.eu/authsaml2/singleLogoutReturn" />
+			<ManageNameIDService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://auth.ill.eu/authsaml2/manageNameId"
+				ResponseLocation="https://auth.ill.eu/authsaml2/manageNameIdReturn" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://auth.ill.eu/authsaml2/singleSignOnPost"
+				index="1" />
+		</SPSSODescriptor>
+	</EntityDescriptor>
 </EntitiesDescriptor>

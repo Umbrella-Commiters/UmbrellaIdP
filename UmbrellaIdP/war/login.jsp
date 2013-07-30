@@ -103,7 +103,7 @@ String lan = (String)sess.getAttribute("lang");
 <body id="wrap">
 	<div id="header">
 		<h1 class="logo">
-			<img src="./files/not-found.png" alt="EuroFEL logo" class="logoimg" />
+			<!--  <img src="./files/not-found.png" alt="EuroFEL logo" class="logoimg" />-->
 			<a href="/euu/">Umbrella</a>
 		</h1>
 		<div id="psimetanav">
@@ -307,7 +307,7 @@ String lan = (String)sess.getAttribute("lang");
 					</div>
 
 					<% if(lan != null && lan.equals("stripped")) {} else { %>
-					<h3>Certificate Login</h3>
+					<!-- <h3>Certificate Login</h3>
 					<div>
 						<form action="https://umbrella.psi.ch/idp/Authn/X509/Login"
 							method="post">
@@ -319,6 +319,7 @@ String lan = (String)sess.getAttribute("lang");
 							</table>
 						</form>
 					</div>
+					 -->
 				</div>
 
 				<% } %>
