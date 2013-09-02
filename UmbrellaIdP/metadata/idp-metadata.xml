@@ -307,14 +307,11 @@
 		<Organization>
 			<OrganizationName xml:lang="en">esrf.eu
 			</OrganizationName>
-			<OrganizationDisplayName xml:lang="de">European
-				Synchrotron Radiation Facility
+			<OrganizationDisplayName xml:lang="de">European Synchrotron Radiation Facility
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="en">European
-				Synchrotron Radiation Facility
+			<OrganizationDisplayName xml:lang="en">European Synchrotron Radiation Facility
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="fr">European
-				Synchrotron Radiation Facility
+			<OrganizationDisplayName xml:lang="fr">European Synchrotron Radiation Facility
 			</OrganizationDisplayName>
 			<OrganizationURL xml:lang="en">https://www.esrf.eu/
 			</OrganizationURL>
@@ -588,14 +585,11 @@
 		<Organization>
 			<OrganizationName xml:lang="en">software.pan-data.eu
 			</OrganizationName>
-			<OrganizationDisplayName xml:lang="de">PaNdata
-				Software
+			<OrganizationDisplayName xml:lang="de">PaNdata Software
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="en">PaNdata
-				Software
+			<OrganizationDisplayName xml:lang="en">PaNdata Software
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="fr">PaNdata
-				Software
+			<OrganizationDisplayName xml:lang="fr">PaNdata Software
 			</OrganizationDisplayName>
 			<OrganizationURL xml:lang="en">https://software.pan-data.eu/
 			</OrganizationURL>
@@ -1000,5 +994,86 @@
 
 	</EntityDescriptor>
 
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_d149b6f108626842b5021a6e7f801d0808bb3a24" entityID="https://devusers.facilities.rl.ac.uk/shibboleth">
+		<SPSSODescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>fitbawebdev.fed.cclrc.ac.uk</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=fitbawebdev.fed.cclrc.ac.uk
+						</ds:X509SubjectName>
+						<ds:X509Certificate>MIIDGDCCAgCgAwIBAgIJAM2n3pVDlzf9MA0GCSqGSIb3DQEBBQUAMCYxJDAiBgNV
+							BAMTG2ZpdGJhd2ViZGV2LmZlZC5jY2xyYy5hYy51azAeFw0xMzA4MTMwNzQ4MTFa
+							Fw0yMzA4MTEwNzQ4MTFaMCYxJDAiBgNVBAMTG2ZpdGJhd2ViZGV2LmZlZC5jY2xy
+							Yy5hYy51azCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAODSEZpl0dLs
+							9fkmhwCYsJL5CVSBEnsO9a4owOUdvVEyQA0hl2CDXUD63OJXltLhbyGpRNWUKvlt
+							lhF6uvwspbh2O8MciDu44Mj+2jlV3M2dQJQ5iLus5xuXroQr06qI3L3/HsIyIZSm
+							qEv73t83Alj3Pz+V6WNVhK9jq6ODwzckwhXOIMH+unVC6c11317z7DtJegllKcjz
+							rElDbITjlbOPNxTUFM0IhvNk+qqIwP+lrRK9NiKoP+1cP33ZJyBsY0BnwQWbOe5J
+							AXLhUGjdAx6koG9MKv3btVKURNGHDpyKYYx3eKaDIn/lEHBQYssAMJ7/t6AE/Eca
+							Hs0JCCR8Jh0CAwEAAaNJMEcwJgYDVR0RBB8wHYIbZml0YmF3ZWJkZXYuZmVkLmNj
+							bHJjLmFjLnVrMB0GA1UdDgQWBBSs6tPGAzXwsAlTFiMoLTZxbpe7HjANBgkqhkiG
+							9w0BAQUFAAOCAQEA1zd70rqJQr0kKzEl9yRprglk/GkWf13kOm/98GpQxDnAZSjT
+							FMl8+W3TtIISHG4Wdid4EMULlcog3up4Ld9anXn3eP3InIXRl+PIsJGaR29PVg0t
+							NnjHHfRqRh6rWZjJeh2cIvIE2gO6rwALNgwfqy47oBZU9z6DfvkgPxzFWonX7qUp
+							qD+XAgAnBMt8GkCRKeKKpeJQs3nElPRMeou0iSAfi+v9Z0xMZgU8fteh9qnl21//
+							eAv89DJ5XjD2HpdT7RXUht5Cg2NLqA4QciMfhUt2MVAsUlJEj54WsT842kPgrUOc
+							3fPPbEIgIHGkXFDCoJ3End73upRGFS7FsoHqrw==
+						</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep" />
+				<EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p" />
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/Artifact/SOAP"
+				index="1" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SLO/Artifact" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML2/POST"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="2" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML2/Artifact"
+				index="3" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML2/ECP"
+				index="4" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML/POST"
+				index="5" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML/Artifact"
+				index="6" />
+		</SPSSODescriptor>
+
+	</EntityDescriptor>
 
 </EntitiesDescriptor>
