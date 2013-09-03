@@ -705,14 +705,11 @@
 		<Organization>
 			<OrganizationName xml:lang="en">casshib.ill.eu
 			</OrganizationName>
-			<OrganizationDisplayName xml:lang="de">ILL Casshib
-				test
+			<OrganizationDisplayName xml:lang="de">ILL Casshib test
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="en">ILL Casshib
-				test
+			<OrganizationDisplayName xml:lang="en">ILL Casshib test
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="fr">ILL Casshib
-				test
+			<OrganizationDisplayName xml:lang="fr">ILL Casshib test
 			</OrganizationDisplayName>
 			<OrganizationURL xml:lang="en">http://ill.eu
 			</OrganizationURL>
@@ -767,14 +764,11 @@
 		<Organization>
 			<OrganizationName xml:lang="en">casshib.ill.eu
 			</OrganizationName>
-			<OrganizationDisplayName xml:lang="de">ILL Casshib
-				test
+			<OrganizationDisplayName xml:lang="de">ILL Casshib test
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="en">ILL Casshib
-				test
+			<OrganizationDisplayName xml:lang="en">ILL Casshib test
 			</OrganizationDisplayName>
-			<OrganizationDisplayName xml:lang="fr">ILL Casshib
-				test
+			<OrganizationDisplayName xml:lang="fr">ILL Casshib test
 			</OrganizationDisplayName>
 			<OrganizationURL xml:lang="en">http://ill.eu
 			</OrganizationURL>
@@ -1072,6 +1066,91 @@
 				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
 				Location="https://devusers.facilities.rl.ac.uk/Shibboleth.sso/SAML/Artifact"
 				index="6" />
+		</SPSSODescriptor>
+
+	</EntityDescriptor>
+	<!-- Diamond Metadata -->
+
+	<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+		ID="_9fba32654e1a65f40898cf95e86f7356bd66bd9f" entityID="https://cas-ubuntu.diamond.ac.uk/shibboleth">
+
+		<SPSSODescriptor
+			protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+			<KeyDescriptor>
+				<ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+					<ds:KeyName>*.diamond.ac.uk</ds:KeyName>
+					<ds:KeyName>diamond.ac.uk</ds:KeyName>
+					<ds:X509Data>
+						<ds:X509SubjectName>CN=*.diamond.ac.uk,O=Diamond Light Source
+							Limited,L=Didcot,ST=Oxfordshire,C=GB</ds:X509SubjectName>
+						<ds:X509Certificate>MIIFNzCCBB+gAwIBAgISESH/BqsJYx44KZEREK76Hy2kMA0GCSqGSIb3DQEBBQUA
+							MF0xCzAJBgNVBAYTAkJFMRkwFwYDVQQKExBHbG9iYWxTaWduIG52LXNhMTMwMQYD
+							VQQDEypHbG9iYWxTaWduIE9yZ2FuaXphdGlvbiBWYWxpZGF0aW9uIENBIC0gRzIw
+							HhcNMTMwMTA3MTEwMDAzWhcNMTgwMTA3MTEwMDAzWjB1MQswCQYDVQQGEwJHQjEU
+							MBIGA1UECBMLT3hmb3Jkc2hpcmUxDzANBgNVBAcTBkRpZGNvdDElMCMGA1UEChMc
+							RGlhbW9uZCBMaWdodCBTb3VyY2UgTGltaXRlZDEYMBYGA1UEAwwPKi5kaWFtb25k
+							LmFjLnVrMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy0U70HBC+3rF
+							EQk37uTCP6gNsPFNnZMob2Q6237fhUekGNaUX7BpRV436UgpD20JEWxtluzWA4VG
+							z2vMOytO7WeLUwGq+DKpVEZtCr4Gkei9ttVydUxoJX0nb5gykYfAwb1lPovVDrka
+							zUz/1KdUFZKM32RSJq3Lxuw4phUX5JMsQmFndYv7Q3BmPcwZv4UDKmqdSLUXcvfS
+							aAyF8xQ6dbKHqUamoq3QeFAc5DvDzscOtRjwpjMq9xoI+rm/jTfhAu+1+S8Ze3HI
+							uPjcu0Q94U/Q84Sx/zZWVyCUgHdODCzs12hNsVo1jrcY11B03RfLirOyODRvJla4
+							Z8/OwNVnOQIDAQABo4IB1zCCAdMwDgYDVR0PAQH/BAQDAgWgMEwGA1UdIARFMEMw
+							QQYJKwYBBAGgMgEUMDQwMgYIKwYBBQUHAgEWJmh0dHBzOi8vd3d3Lmdsb2JhbHNp
+							Z24uY29tL3JlcG9zaXRvcnkvMCkGA1UdEQQiMCCCDyouZGlhbW9uZC5hYy51a4IN
+							ZGlhbW9uZC5hYy51azAJBgNVHRMEAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggr
+							BgEFBQcDAjBFBgNVHR8EPjA8MDqgOKA2hjRodHRwOi8vY3JsLmdsb2JhbHNpZ24u
+							Y29tL2dzL2dzb3JnYW5pemF0aW9udmFsZzIuY3JsMIGWBggrBgEFBQcBAQSBiTCB
+							hjBHBggrBgEFBQcwAoY7aHR0cDovL3NlY3VyZS5nbG9iYWxzaWduLmNvbS9jYWNl
+							cnQvZ3Nvcmdhbml6YXRpb252YWxnMi5jcnQwOwYIKwYBBQUHMAGGL2h0dHA6Ly9v
+							Y3NwMi5nbG9iYWxzaWduLmNvbS9nc29yZ2FuaXphdGlvbnZhbGcyMB0GA1UdDgQW
+							BBTnJ91f31FCP0hfHKg66ICSURRo4zAfBgNVHSMEGDAWgBRdRrKNxEt0HLvt9XO2
+							Orc4j3WefjANBgkqhkiG9w0BAQUFAAOCAQEANXneQ75Gqw12fssTVW4oZ7TwVU/r
+							sRWTOhfCG3ccGTQIvs2kx+uhiZglY1H7nuo4m9pqpQsUv0ETuxpvIx1ydnFuFIT4
+							vNpp/jd+0SJ3fxMosfL+8FgrZSOmAivT2vvHzwBJGfj+I9k6u402v+58wmOpjF00
+							5QLstIPgyOKbvfPRCa3KFu37ZnEUkr4XtiAYYOryPSuZX+aFRFU5VFwId7A5j0DN
+							bMLPovhwtEHDtaqz+gHOn/nOmeJQesh9GF/zdtSmuUbc93Tp0MO5W6L/CGVXkUqr
+							vNr85M4dSwJIJuFBV4XIx+Rp6IUufWs8JHrwzrWKFql7sqvdaZoGMg4nzQ==
+						</ds:X509Certificate>
+					</ds:X509Data>
+				</ds:KeyInfo>
+			</KeyDescriptor>
+			<ArtifactResolutionService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/Artifact/SOAP"
+				index="0" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SLO/SOAP" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SLO/Redirect" />
+			<SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SLO/POST" />
+			<SingleLogoutService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SLO/Artifact" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SAML2/POST"
+				index="0" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SAML2/POST-SimpleSign"
+				index="1" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SAML2/Artifact"
+				index="2" />
+			<AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SAML2/ECP"
+				index="3" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SAML/POST"
+				index="4" />
+			<AssertionConsumerService
+				Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01"
+				Location="https://cas-ubuntu.diamond.ac.uk/Shibboleth.sso/SAML/Artifact"
+				index="5" />
 		</SPSSODescriptor>
 
 	</EntityDescriptor>
