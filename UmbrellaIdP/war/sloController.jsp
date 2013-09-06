@@ -315,8 +315,7 @@ Boolean sloAttempted = false;
             %>
 				<script type="text/javascript">
                 <!--
-                document.write('<iframe src="<%= contextPath %>/SLOServlet?action&entityID=<%= entityID %>
-					" width="0" height="0"></iframe>');
+                document.write('<iframe src="<%= contextPath %>/SLOServlet?action&entityID=<%= entityID %>" width="0" height="0"></iframe>');
 				//-->
 				</script>
 				<%
