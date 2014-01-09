@@ -50,9 +50,12 @@
             importPackage(Packages.javax.security.auth.x500);
  
             x500Principal = new BasicAttribute("x500Principal");
-            subject = requestContext.getUserSession().getSubject();
-            if (subject != null) {
-                x500Principal.getValues().addAll(subject.getPrincipals(X500Principal("").getClass()));
+            if (requestContext.getUserSession())
+            { 
+                subject = requestContext.getUserSession().getSubject();
+                if (subject != null) {
+                    x500Principal.getValues().addAll(subject.getPrincipals(X500Principal("").getClass()));
+                }
             }
         ]]></Script>
  
@@ -68,9 +71,12 @@
             importPackage(Packages.ch.SWITCH.aai.idp.x509.principals);
  
             x500SubjectAltNameEMailPrincipal = new BasicAttribute("x500SubjectAltNameEMailPrincipal");
-            subject = requestContext.getUserSession().getSubject();
-            if (subject != null) {
-                x500SubjectAltNameEMailPrincipal.getValues().addAll(subject.getPrincipals(EMailPrincipal("").getClass()));
+            if (requestContext.getUserSession())
+            { 
+                subject = requestContext.getUserSession().getSubject();
+                if (subject != null) {
+                    x500SubjectAltNameEMailPrincipal.getValues().addAll(subject.getPrincipals(EMailPrincipal("").getClass()));
+                }
             }
         ]]></Script>
  
