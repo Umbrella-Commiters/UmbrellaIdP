@@ -24,6 +24,7 @@
 			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://umbrellaid.org/idp/profile/SAML2/POST/SSO"/>
 			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://umbrellaid.org/idp/profile/SAML2/POST-SimpleSign/SSO"/>
 			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://umbrellaid.org/idp/profile/SAML2/Redirect/SSO"/>
+			<SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://umbrellaid.org/idp/profile/SAML2/SOAP/ECP"/>
 		</IDPSSODescriptor>
 		<AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
 			<Extensions>
