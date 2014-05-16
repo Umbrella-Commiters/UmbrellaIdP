@@ -57,7 +57,7 @@
 	});
 </script>
 </head>
-<body id="wrap">
+<body id="wrap" onload="$('#TopNav').load('/includes/topNav.html');">
 	<div id="header">
 		<h1 class="logo">
 			<!--  <img src="./files/not-found.png" alt="EuroFEL logo" class="logoimg" />-->
