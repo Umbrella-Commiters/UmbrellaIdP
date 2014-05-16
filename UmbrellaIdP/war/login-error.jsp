@@ -56,8 +56,9 @@
 		$("#accordion").accordion();
 	});
 </script>
+<script type="text/javascript" src="/euu/layout/js/prototype.js"></script>
 </head>
-<body id="wrap" onload="$('#TopNav').load('/includes/topNav.html');">
+<body id="wrap" onload="new Ajax.Updater('TopNav', '/includes/topNav.html', {method: 'get', parameters: ''});">
 	<div id="header">
 		<h1 class="logo">
 			<!--  <img src="./files/not-found.png" alt="EuroFEL logo" class="logoimg" />-->
@@ -74,7 +75,7 @@
 		</div>
 
 	</div>
-	<div class="TopNav">
+	<div id="TopNav" class="TopNav">
 		<form method="post" action="/euu/urlmap" name="BreadCrumbForm">
 			<p>
 				<input value="BreadCrumbForm" name="Form" type="hidden"></input>
