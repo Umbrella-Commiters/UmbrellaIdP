@@ -614,8 +614,10 @@
 			<OrganizationURL xml:lang="en">https://door.desy.de/</OrganizationURL>
 		</Organization>
 		<ContactPerson contactType="support">
-			<GivenName>Ulrike</GivenName>
-			<SurName>Lindemann</SurName>
+			<GivenName>Umbrella</GivenName>
+			<SurName>Support</SurName>
+			<EmailAddress>mailto:umbrellaid@desy.de</EmailAddress>
+			<TelephoneNumber>999</TelephoneNumber>
 		</ContactPerson>
 	</EntityDescriptor>
 	<!-- ANKA Test -->
