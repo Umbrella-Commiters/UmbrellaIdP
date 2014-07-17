@@ -789,4 +789,56 @@ of+/mk1Ty5GSXUnQdVQXlo7J8y1XEaEbC5rbM+xX2a5b0zvNt+NUYg==
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="https://discrette.synchrotron-soleil.fr/Shibboleth.sso/SAML/Artifact" index="6"/>
   </md:SPSSODescriptor>
 </md:EntityDescriptor>
+<!-- WayForLight Metadata -->
+<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_53904a5e84fd95dd70bd4665491050146f5fcc33" entityID="https://www.wayforlight.eu/shibboleth">
+
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:1.0:protocol">
+    <KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>promoserv1</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=promoserv1</ds:X509SubjectName>
+          <ds:X509Certificate>MIIC5TCCAc2gAwIBAgIJAOVJocXWjLdUMA0GCSqGSIb3DQEBBQUAMBUxEzARBgNV
+BAMTCnByb21vc2VydjEwHhcNMTQwNzA5MTQwNDUyWhcNMjQwNzA2MTQwNDUyWjAV
+MRMwEQYDVQQDEwpwcm9tb3NlcnYxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAui+WbwXoNcPiuWpfx0fh983W/rdSSBDLElL0Vnyh2xxQsBLxBHjYu7Vh
+7oTmNR3ggqZSsgMZBNM7PnI9iKjSUPl/l0ptUbqSpBYLdedX+aqBnPSyL3Eb7J/S
+dL7BCo0f6Ffe35C9eGQrqQ0lmxjLo/PPb/X2WxF/3KcMLF3/Wiqw+7SEywELNiio
+wXoTG4iNwwiA2DOswhHKS9ntsLObSP6IGMnPG2VDCWKZwBj8Ic2NplNi0JWsFPeY
+q/VbBClCZ2+ua/jBoB15sEd/UkwSOkkUyrDxAUp8hMmZHcQ0+YYMk0sCpVWIOqZc
+k1kNLT7r726Y2iqQUh2Ybr+NtTtcfwIDAQABozgwNjAVBgNVHREEDjAMggpwcm9t
+b3NlcnYxMB0GA1UdDgQWBBRJ7p5IMvq9UebCYi3dVDitUnFObzANBgkqhkiG9w0B
+AQUFAAOCAQEAB8psvyx3DOphy8Xi7/wmVqcpmKeOk8VInPhSQ/c3f6wyF3MNZjLK
+rf+uPbSJDZRVnrZgU+oaOKZFZTtEdniAKvnJevRAJrg/MOOYwOqqP3b9NPlX/4ys
+Gmk8VhYfqK3nMGs4RsXwO+xqK0ipHlNLMlctX6eKUTFBTS2iI+LPUVXZ0mRaJTq2
+UoGl18aFnoZHk+gfSeGYFsbbCupcA7mTTLUD1AAM2+/plVHVr0V/yWOYSohhIl3Q
+Os1JUQmFddJF/iZuVnFnrnWdVWgX+rCRxqCGz6hhwPGFTnjmc4XuuAEmGcok3OWl
+fR/AaAf4MCtB0KZu48e1a/RTimenm+2N0w==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://www.wayforlight.eu/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://www.wayforlight.eu/Shibboleth.sso/SLO/SOAP"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://www.wayforlight.eu/Shibboleth.sso/SLO/Redirect"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://www.wayforlight.eu/Shibboleth.sso/SLO/POST"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://www.wayforlight.eu/Shibboleth.sso/SLO/Artifact"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://www.wayforlight.eu/Shibboleth.sso/SAML2/POST" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="http://www.wayforlight.eu/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://www.wayforlight.eu/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="http://www.wayforlight.eu/Shibboleth.sso/SAML2/ECP" index="4"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:browser-post" Location="http://www.wayforlight.eu/Shibboleth.sso/SAML/POST" index="5"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:1.0:profiles:artifact-01" Location="http://www.wayforlight.eu/Shibboleth.sso/SAML/Artifact" index="6"/>
+  </SPSSODescriptor>
+
+</EntityDescriptor>
 </EntitiesDescriptor>
