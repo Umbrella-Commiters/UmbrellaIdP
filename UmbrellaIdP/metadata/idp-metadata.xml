@@ -841,4 +841,53 @@ fR/AaAf4MCtB0KZu48e1a/RTimenm+2N0w==
   </SPSSODescriptor>
 
 </EntityDescriptor>
+
+<!-- Max IV Metadata -->
+<EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_be8be242b2d505b4fd1be0a81c605eb94ba1f373" entityID="https://develop.maxlab.lu.se/shibboleth">
+
+  <SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>srvv1-develop-0.maxlab.lu.se</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=srvv1-develop-0.maxlab.lu.se</ds:X509SubjectName>
+          <ds:X509Certificate>MIIDGzCCAgOgAwIBAgIJAM6POQWIFRaHMA0GCSqGSIb3DQEBBQUAMCcxJTAjBgNV
+BAMTHHNydnYxLWRldmVsb3AtMC5tYXhsYWIubHUuc2UwHhcNMTQwNzIxMTEzOTA5
+WhcNMjQwNzE4MTEzOTA5WjAnMSUwIwYDVQQDExxzcnZ2MS1kZXZlbG9wLTAubWF4
+bGFiLmx1LnNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3VVphDwH
+AdXfVTRCM42iWm3oY10exLG1P6+9DgaBLLDUKvv5iAjD7+uZuttGj98bZH1WA1SL
+BBcgFLZpiH96tZvv+jkU9majJz2AwoliPM9/yia3qHTPkfZBVhC68+a9KAWZJpx6
+8vjL/BA/tn7UrUwZe1ziFsoA4jB6ig8ZQNTu033C5ugRivlM9VH3L8Ik1xLKoJe+
+Zy/5ph4J8NUWWaOYrhja0jv2uHMCbDdroV9I5910k3M1IQ4OLBlC8grWAOUhPh2r
+l+iyU9QW79JVEb+u9T5OOgegf0NHTXdFUDnzj6X+Rv6FbCEv1aVegHZsEew46P0N
+vZSY9tLKdtJsjwIDAQABo0owSDAnBgNVHREEIDAeghxzcnZ2MS1kZXZlbG9wLTAu
+bWF4bGFiLmx1LnNlMB0GA1UdDgQWBBTnJoeVtraybe4aHWwMs7Nf8a5g7jANBgkq
+hkiG9w0BAQUFAAOCAQEAywfvNRoI0vBQcTRZFvqb4V+I5mhzP9GylF5JtDLAbZxr
+EPto7w5ZURjBZ/SsUHepMk6yotwVsnuEX2feXq6HO0FcEkhjnsvcu1Q1wF0Hs4wb
+rnXTf/RBmTX8v9i60IuXwtnoUt1O2LIGeT3FeljNuYT+2GFt70Sc49MF2QgGbJqX
+7sTJpCSycHbTrqxXLX+1XAOEBWbHPFAO5cfmjOaAYO6g8Z4aE3vhjmSp9oooGQHj
+xRyjLzr1QaqWUxwa7whzX/lM+tf35gJqzDWTsRvkOoU6fwSGmRfaNprE1C7No8/P
+A5BBRcjyH7kphrB1tYKFDX6rXRW4VXloFpbPhHoH/g==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://develop.maxlab.lu.se/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SLO/SOAP"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SLO/Redirect"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SLO/POST"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SLO/Artifact"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SAML2/POST" index="1"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://develop.maxlab.lu.se/Shibboleth.sso/SAML2/ECP" index="4"/>
+  </SPSSODescriptor>
+
+</EntityDescriptor>
 </EntitiesDescriptor>
