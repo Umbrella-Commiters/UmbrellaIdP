@@ -842,6 +842,70 @@ fR/AaAf4MCtB0KZu48e1a/RTimenm+2N0w==
 
 </EntityDescriptor>
 
+<!-- Max IV Metadata Production WUO SP -->
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_1e14581f6d4b2859043e7a0ee8b0da373aeec48c" entityID="https://duo.maxlab.lu.se/shibboleth">
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://duo.maxlab.lu.se/Shibboleth.sso/Login"/>
+    </md:Extensions>
+    <md:KeyDescriptor>
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>srvv0-develop-1.maxlab.lu.se</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=srvv0-develop-1.maxlab.lu.se</ds:X509SubjectName>
+          <ds:X509Certificate>MIIDGzCCAgOgAwIBAgIJAJQmktol7xYqMA0GCSqGSIb3DQEBBQUAMCcxJTAjBgNV
+BAMTHHNydnYwLWRldmVsb3AtMS5tYXhsYWIubHUuc2UwHhcNMTUwMzMwMTA0NjEy
+WhcNMjUwMzI3MTA0NjEyWjAnMSUwIwYDVQQDExxzcnZ2MC1kZXZlbG9wLTEubWF4
+bGFiLmx1LnNlMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7ZZIhkyD
+fq9SX1bhVK1cGlR5aixO0yk0cdNOqtAaIgAr+UoPu5OabVKqr0rfs+DftK7IY2em
+Z7YFZD2HMlwaADXMjJiAie4ef5oEW8zLg3sENA/BYlOWArTPwm21E8f7GVb9GHB4
+Qj+HsOC6IoRMVGZuIz8Sh64PShbDP91lEHU13d3PZaI/q71aVDuESf4uglwzI19e
+ufWpA3ne4cKyIgcvQLE5InCyh4P/7e86VdBParPl5Kcn5USH3VJYmJ1VsAACZN/2
+Vg3rAYw9vghsI9WDvFmd+OvC9pWOYevwvLgTH8Duh+MeRPp2Db80zfeepicfWZBd
+iOdXpKeS5g5EwwIDAQABo0owSDAnBgNVHREEIDAeghxzcnZ2MC1kZXZlbG9wLTEu
+bWF4bGFiLmx1LnNlMB0GA1UdDgQWBBTcZQzafrwuTvS4/Y4htdT3S4BxkDANBgkq
+hkiG9w0BAQUFAAOCAQEAYml9f42HhTfON31hiw/KdL3Z7P6ygImDtNZ2MY6zJVzd
+zYFr41ffLpj3IsAivJk9pE3Th5XqfL/xrS+7azue5azn9BW64/lQevEk6gajcogS
+R07hljNrTtOkWAxAhOPPgB3cL4ClR6mpZeUzOjGi3VRE/ixLsLpGHRaX2sauDL5k
+6MRz9EMcmQ0vQLzucHlxG9RlKE9q7Ztc806IfgT6cSuOAdp6onKgKxj3CDCrA6zW
+q8W4rFZJ8A6MpX2POjc5O5Q4yTWQ2gVJk+iPLn7DErC0nuxwhfZ4q6sw8Zn8LVG0
+Va7DWoPmJp7Wpniu2Oe2/K99gNvKYlLi9/eKdV46ig==
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://duo.maxlab.lu.se/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://duo.maxlab.lu.se/Shibboleth.sso/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+</md:EntityDescriptor>
+
+
 <!-- Max IV Metadata -->
 <EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_be8be242b2d505b4fd1be0a81c605eb94ba1f373" entityID="https://develop.maxlab.lu.se/shibboleth">
 
