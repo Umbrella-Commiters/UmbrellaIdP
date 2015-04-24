@@ -1025,6 +1025,9 @@ dNI/Xy7AaXJ5lztsjdv4bg==
     <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://duotest.maxlab.lu.se/Shibboleth.sso/SAML2/ECP" index="4"/>
   </md:SPSSODescriptor>
 </md:EntityDescriptor>
+
+
+<!-- University of Oxford Strubi SP -->
 <md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_a628ce81374a75bbf144b4718dba6fcf72cf17c0" entityID="https://sp.strubi.ox.ac.uk/shibboleth">
 
   <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
